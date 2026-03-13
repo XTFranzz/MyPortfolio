@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christian C. Francisco | Designer & Developer</title>
+  <meta name="description" content="UI/UX Designer & Backend Developer - Christian C. Francisco" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#home" class="logo">&lt;Christian&gt;</a>
+      <nav class="nav-center">
+        <a href="#about" class="nav-link">about</a>
+        <a href="#featured" class="nav-link">featured</a>
+        <a href="#portfolio" class="nav-link">portfolio</a>
+        <a href="#blog" class="nav-link">blog</a>
+      </nav>
+      <div class="header-right">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=franciscochristian262@gmail.com" target="_blank  " rel="noopener noreferrer" class="icon-link"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/christian-francisco-1441083b1/" target="_blank" rel="noopener noreferrer" class="icon-link"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/erin.jara.566" target="_blank" rel="noopener noreferrer" class="icon-link"><i class="fab fa-facebook"></i></a>
+        <a href="https://drive.google.com/uc?export=download&id=1RxKLk6zKLfcCbv928_xKfvRtpNtpMMCH" class="resume-link">Resume</a>
+        <button class="theme-toggle" aria-label="Toggle dark/light mode"><i class="fas fa-sun"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-left">
+          <div class="typing-container">
+            <h2 class="role typing" id="typing-text"><span class="cursor"></span></h2>
+          </div>
+          <p class="role-desc" id="description"></p>
+          
+          <div class="divider"></div>
+        </div>
+        
+        <div class="hero-right">
+          <div class="portrait-frame">
+            <img src="img\ako.jpg" alt="Christian C. Francisco" class="portrait" />
+            <div class="portrait-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="content-section">
+      <div class="section-container">
+        <h3 class="section-title">About</h3>
+        <p class="section-text">
+          I am a 4th year student at <strong>Western Mindanao State University</strong>, combining UI/UX design expertise with backend development skills. I love creating beautiful interfaces and robust systems that solve real problems.
+        </p>
+      </div>
+    </section>
+
+    <section id="featured" class="content-section">
+      <div class="section-container">
+        <h3 class="section-title">Featured Work</h3>
+        <div class="featured-grid" id="featured-grid">
+          <article class="featured-item">
+            <h4>SafePath Zamboanga City</h4>
+            <p>Location-based safety and smart navigation platform.</p>
+            <a href="https://safepath-zamboanga-city.vercel.app/" target="_blank" rel="noopener noreferrer" class="featured-link">View Project →</a>
+          </article>
+          <article class="featured-item">
+            <h4>CitySmilesRepo</h4>
+            <p>Open-source project showcasing collaborative development.</p>
+            <a href="https://github.com/nooniman/CitySmilesRepo" target="_blank" rel="noopener noreferrer" class="featured-link">View on GitHub →</a>
+          </article>
+          <article class="featured-item hidden-project">
+            <h4>WMSU HR Connect</h4>
+            <p>Human Resources management and employee connectivity platform for organizational efficiency.</p>
+            <a href="https://github.com/Prototyp3html/wmsu-hr-connect/" target="_blank" rel="noopener noreferrer" class="featured-link">View on GitHub →</a>
+          </article>
+        </div>
+        <button class="see-all-btn" id="see-all-btn">See All Projects</button>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-container">
+        <h3 class="section-title">Case Studies</h3>
+        <div class="case-studies-container">
+          <article class="case-study">
+            <div class="case-study-header">
+              <h4>SafePath Zamboanga City</h4>
+              <span class="case-study-badge">Web App</span>
+            </div>
+            <p class="case-study-description">A location-based safety and smart navigation platform designed to help users navigate dangerous areas safely.</p>
+            <div class="case-study-details">
+              <div class="detail-item">
+                <strong>Problem:</strong> Users needed a reliable way to identify safe routes in their area.
+              </div>
+              <div class="detail-item">
+                <strong>Solution:</strong> Developed an interactive map-based app with real-time safety data and route optimization.
+              </div>
+              <div class="detail-item">
+                <strong>Tech Stack:</strong> React, Node.js, Google Maps API, MongoDB
+              </div>
+              <div class="detail-item">
+                <strong>Impact:</strong> Improved user safety awareness and navigation confidence.
+              </div>
+            </div>
+            <a href="https://safepath-zamboanga-city.vercel.app/" target="_blank" rel="noopener noreferrer" class="featured-link">View Live Project →</a>
+          </article>
+
+          <article class="case-study">
+            <div class="case-study-header">
+              <h4>WMSU HR Connect</h4>
+              <span class="case-study-badge">HR Platform</span>
+            </div>
+            <p class="case-study-description">A comprehensive human resources management system for organizational employee connectivity and efficiency.</p>
+            <div class="case-study-details">
+              <div class="detail-item">
+                <strong>Problem:</strong> Organizations needed a unified platform to manage HR operations and employee communication.
+              </div>
+              <div class="detail-item">
+                <strong>Solution:</strong> Built a full-featured HR management platform with employee directories, leave management, and announcements.
+              </div>
+              <div class="detail-item">
+                <strong>Tech Stack:</strong> React, TypeScript, Node.js, PostgreSQL, Docker
+              </div>
+              <div class="detail-item">
+                <strong>Impact:</strong> Streamlined HR processes and improved internal communication efficiency.
+              </div>
+            </div>
+            <a href="https://github.com/Prototyp3html/wmsu-hr-connect/" target="_blank" rel="noopener noreferrer" class="featured-link">View on GitHub →</a>
+          </article>
+
+          <article class="case-study">
+            <div class="case-study-header">
+              <h4>CitySmilesRepo</h4>
+              <span class="case-study-badge">Dental Management System</span>
+            </div>
+            <p class="case-study-description">A professional dental booking and patient management system featuring an interactive 3D teeth model for dental diagnosis and treatment planning.</p>
+            <div class="case-study-details">
+              <div class="detail-item">
+                <strong>Problem:</strong> Dental clinics needed a digital way to track patient dental records, manage appointments, and allow dentists to accurately document and prescribe treatments for specific teeth areas.
+              </div>
+              <div class="detail-item">
+                <strong>Solution:</strong> Developed a comprehensive booking system with an interactive 3D teeth model representing 32 adult teeth with 5 sectors per tooth. Dentists can click on specific tooth areas to document problems and prescribe targeted treatments.
+              </div>
+              <div class="detail-item">
+                <strong>Key Features:</strong> Patient booking management, interactive dental chart with 160 clickable tooth sectors, treatment history, prescription tracking, and patient data storage.
+              </div>
+              <div class="detail-item">
+                <strong>Tech Stack:</strong> JavaScript, PHP, Three.js (3D modeling), phpAdmin, interactive canvas rendering
+              </div>
+              <div class="detail-item">
+                <strong>Impact:</strong> Improved dental diagnosis accuracy, streamlined patient record management, and enhanced client-dentist communication during treatment planning.
+              </div>
+            </div>
+            <a href="https://github.com/nooniman/CitySmilesRepo" target="_blank" rel="noopener noreferrer" class="featured-link">View on GitHub →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="content-section">
+      <div class="section-container">
+        <h3 class="section-title">Skills & Proficiency</h3>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h5>Frontend Development</h5>
+            <div class="skill-item">
+              <span class="skill-name">React / JavaScript</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">HTML / CSS / Tailwind</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">TypeScript</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 60%;"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h5>Backend Development</h5>
+            <div class="skill-item">
+              <span class="skill-name">Node.js / Express</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">MongoDB / PostgreSQL</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">RESTful APIs</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h5>Design & Tools</h5>
+            <div class="skill-item">
+              <span class="skill-name">UI/UX Design (Figma)</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Wireframing & Prototyping</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Git / GitHub</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 70%;"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h5>Soft Skills</h5>
+            <div class="skill-item">
+              <span class="skill-name">Problem Solving</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 93%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Team Collaboration</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 91%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Communication</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 89%;"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-container">
+        <h3 class="section-title">Certifications & Education</h3>
+        <div class="certifications-list">
+          <div class="certification-item">
+            <div class="cert-header">
+              <h5>Bachelor of Science in Information Technology</h5>
+              <span class="cert-date">2022 - PRESENT</span>
+            </div>
+            <p class="cert-school">Western Mindanao State University, Zamboanga City</p>
+            <p class="cert-details">4th Year Student | Currently Enrolled</p>
+          </div>
+
+          <div class="certification-item">
+            <div class="cert-header">
+              <h5>Science Technology Engineering Mathematics (STEM)</h5>
+              <span class="cert-date">2020 - 2022</span>
+            </div>
+            <p class="cert-school">Immaculate Conception Archdiocesan School, Zamboanga City</p>
+            <p class="cert-details">Specialized Track in Science and Mathematics</p>
+          </div>
+
+          <div class="certification-item">
+            <div class="cert-header">
+              <h5>High School</h5>
+              <span class="cert-date">2016 - 2020</span>
+            </div>
+            <p class="cert-school">Immaculate Conception Archdiocesan School, Zamboanga City</p>
+            <p class="cert-details">General Education</p>
+          </div>
+
+          <div class="certification-item">
+            <div class="cert-header">
+              <h5>National Certificate II</h5>
+              <span class="cert-date">2018</span>
+            </div>
+            <p class="cert-school">TESDA Program</p>
+            <p class="cert-details">Computer System Servicing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="content-section contact-section">
+      <div class="section-container">
+        <h3 class="section-title">Get in Touch</h3>
+        <p class="section-text">Let's connect and build something amazing together.</p>
+        <div class="contact-info">
+          <a href="tel:09774747639" class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>09774747639</span>
+          </a>
+          <a href="mailto:franciscochristian262@gmail.com" class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>franciscochristian262@gmail.com</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Christian C. Francisco. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
