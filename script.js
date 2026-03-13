@@ -1,7 +1,10 @@
 // Typing animation for roles and descriptions
+const greetingText = document.getElementById('greeting');
 const typingText = document.getElementById('typing-text');
 const descriptionText = document.getElementById('description');
 const cursor = document.querySelector('.cursor');
+
+const greeting = "Hey there! I'm Christian C. Francisco";
 
 const roles = [
   {
@@ -16,21 +19,40 @@ const roles = [
   }
 ];
 
+let greetingDone = false;
 let currentRoleIndex = 0;
 let charIndex = 0;
 let descCharIndex = 0;
-let animationPhase = 'typing-role'; // 'typing-role', 'typing-desc', 'pausing', 'deleting-desc', 'deleting-role'
+let greetingCharIndex = 0;
+let animationPhase = 'typing-greeting'; // 'typing-greeting', 'typing-role', 'typing-desc', 'pausing', 'deleting-desc', 'deleting-role'
 let typingSpeed = 80;
 let pauseTime = 1500;
 let displayedText = '';
 let displayedDesc = '';
+let displayedGreeting = '';
 
 function typeAnimation() {
-  const currentRole = roles[currentRoleIndex];
-  const roleText = currentRole.text;
-  const descText = currentRole.description;
-  
-  if (animationPhase === 'typing-role') {
+  if (animationPhase === 'typing-greeting') {
+    if (greetingCharIndex < greeting.length) {
+      displayedGreeting += greeting[greetingCharIndex];
+      greetingText.textContent = displayedGreeting;
+      greetingText.appendChild(cursor);
+      greetingCharIndex++;
+      setTimeout(typeAnimation, typingSpeed);
+    } else {
+      // Greeting typing complete
+      greetingText.textContent = displayedGreeting;
+      greetingDone = true;
+      animationPhase = 'typing-role';
+      charIndex = 0;
+      displayedText = '';
+      setTimeout(typeAnimation, 500);
+    }
+  } else if (animationPhase === 'typing-role') {
+    const currentRole = roles[currentRoleIndex];
+    const roleText = currentRole.text;
+    const descText = currentRole.description;
+    
     if (charIndex < roleText.length) {
       displayedText += roleText[charIndex];
       // Update role text with cursor in the h2
@@ -48,6 +70,9 @@ function typeAnimation() {
       setTimeout(typeAnimation, 300);
     }
   } else if (animationPhase === 'typing-desc') {
+    const currentRole = roles[currentRoleIndex];
+    const descText = currentRole.description;
+    
     if (descCharIndex < descText.length) {
       displayedDesc += descText[descCharIndex];
       // Update description text with cursor in the p
