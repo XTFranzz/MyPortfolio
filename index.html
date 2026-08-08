@@ -35,6 +35,9 @@
     <section class="hero">
       <div class="hero-container">
         <div class="hero-left">
+          <div class="intro-avatar">
+            <img src="img\ako.jpg" alt="Christian C. Francisco" />
+          </div>
           <p class="greeting" id="greeting"><span class="cursor"></span></p>
           <div class="typing-container">
             <h2 class="role typing" id="typing-text"></h2>
@@ -45,10 +48,7 @@
         </div>
         
         <div class="hero-right">
-          <div class="portrait-frame">
-            <img src="img\ako.jpg" alt="Christian C. Francisco" class="portrait" />
-            <div class="portrait-overlay"></div>
-          </div>
+          <div id="hero-orbit-root"></div>
         </div>
       </div>
     </section>
@@ -168,7 +168,6 @@
     <section id="portfolio" class="content-section">
       <div class="section-container">
         <h3 class="section-title">Skills & Proficiency</h3>
-        <div id="tech-globe-root"></div>
         <div class="skills-grid">
           <div class="skill-category">
             <h5>Frontend Development</h5>
@@ -303,6 +302,6 @@
   </footer>
 
   <script src="script.js"></script>
-  <script type="module" src="/src/tech-globe/main.jsx"></script>
+  <script type="module" src="/src/hero-orbit/main.jsx"></script>
 </body>
 </html>

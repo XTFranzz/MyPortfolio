@@ -162,12 +162,30 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: center;
+  align-items: start;
   width: 100%;
 }
 
 .hero-left {
   animation: slideInLeft 0.8s ease-out;
+}
+
+.intro-avatar {
+  width: min(100%, 360px);
+  aspect-ratio: 4 / 5;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 1.75rem;
+  border: 1px solid var(--accent-2);
+  box-shadow: 0 0 40px rgba(78, 205, 196, 0.25), var(--shadow);
+}
+
+.intro-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  animation: fadeIn 0.8s ease-in;
 }
 
 .greeting {
@@ -245,31 +263,11 @@ main {
   animation: slideInRight 0.8s ease-out;
 }
 
-.portrait-frame {
-  position: relative;
+#hero-orbit-root {
   width: 100%;
-  max-width: 400px;
-  aspect-ratio: 3/4;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-.portrait {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  animation: fadeIn 0.8s ease-in;
-}
-
-.portrait-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  pointer-events: none;
+  max-width: 480px;
+  aspect-ratio: 1 / 1;
+  margin-top: -48px;
 }
 
 .content-section {
@@ -672,8 +670,9 @@ body.light-mode .contact-item:hover {
     order: -1;
   }
 
-  .portrait-frame {
-    max-width: 350px;
+  #hero-orbit-root {
+    max-width: 380px;
+    margin-top: 0;
   }
 }
 
